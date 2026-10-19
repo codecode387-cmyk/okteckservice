@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKTECH SERVICES ENGINEERING | Industrial Generators & Solar Solutions</title>
+    <meta name="description" content="OKTECH SERVICES ENGINEERING specializes in industrial generator sets, including Perkins and Cummins, generator repairs, servicing, installation, and solar energy solutions in Shomolu, Lagos.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="OKTECH SERVICES ENGINEERING | Industrial Generators & Solar Solutions">
+    <meta property="og:description" content="Specialists in industrial generator sets, Perkins and Cummins, generator repairs, servicing, installation, and solar energy solutions.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --navy: #101F35;
+            --blue: #1769AA;
+            --blue-hover: #12507f;
+            --white: #FFFFFF;
+            --gold: #D4AF37;
+            --gold-hover: #b8952b;
+            --light-gray: #F4F6F8;
+            --charcoal: #20252B;
+            --text-muted: #555555;
+            --transition: all 0.3s ease;
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Roboto Condensed', sans-serif;
+        }
+
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-main); color: var(--charcoal); background-color: var(--white); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: 0.5px; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; object-fit: cover; }
+
+        /* Utilities */
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        .section-padding { padding: 80px 0; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 2.8rem; margin-bottom: 15px; position: relative; display: inline-block; color: var(--navy); }
+        .section-header h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: var(--gold); }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 20px auto 0; }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; font-size: 1rem; font-weight: 600; border-radius: 4px; cursor: pointer; transition: var(--transition); border: none; gap: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn-blue { background-color: var(--blue); color: var(--white); }
+        .btn-blue:hover { background-color: var(--blue-hover); box-shadow: 0 4px 15px rgba(23, 105, 170, 0.4); }
+        .btn-gold { background-color: var(--gold); color: var(--navy); }
+        .btn-gold:hover { background-color: var(--gold-hover); box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+        .btn-outline { background-color: transparent; color: var(--white); border: 2px solid var(--gold); }
+        .btn-outline:hover { background-color: var(--gold); color: var(--navy); }
+        .btn-whatsapp { background-color: #25D366; color: var(--white); }
+        .btn-whatsapp:hover { background-color: #1ebe57; }
+
+        /* Animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Navigation */
+        nav { position: fixed; top: 0; width: 100%; background-color: var(--navy); padding: 20px 0; z-index: 1000; transition: var(--transition); border-bottom: 1px solid rgba(255,255,255,0.1); }
+        nav.scrolled { padding: 15px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--white); font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .logo i { color: var(--gold); }
+        .nav-links { display: flex; gap: 30px; align-items: center; }
+        .nav-links a { color: var(--white); font-weight: 500; font-size: 0.95rem; transition: var(--transition); text-transform: uppercase; }
+        .nav-links a:hover { color: var(--gold); }
+        .hamburger { display: none; color: var(--white); cursor: pointer; background: none; border: none; }
+
+        /* Hero Section */
+        .hero { height: 100vh; min-height: 700px; background: linear-gradient(rgba(16, 31, 53, 0.85), rgba(16, 31, 53, 0.9)), url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; display: flex; align-items: center; position: relative; }
+        .hero-content { max-width: 800px; color: var(--white); }
+        .hero-content h1 { font-size: 4.5rem; margin-bottom: 20px; line-height: 1.1; }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 30px; color: #dddddd; max-width: 650px; }
+        .hero-subtext { display: flex; gap: 15px; font-size: 0.9rem; font-weight: 600; color: var(--gold); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 1px; flex-wrap: wrap; }
+        .hero-buttons { display: flex; gap: 20px; }
+
+        /* About Section */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-image { border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-left: 5px solid var(--gold); }
+        .about-image img { width: 100%; height: 500px; }
+        .about-content h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--navy); }
+        .about-content p { color: var(--text-muted); margin-bottom: 20px; }
+
+        /* Industrial Generators Section */
+        .generators-section { background-color: var(--light-gray); }
+        .generator-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .generator-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: var(--transition); display: flex; flex-direction: column; border-top: 4px solid var(--blue); }
+        .generator-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-top-color: var(--gold); }
+        .generator-image { height: 250px; overflow: hidden; position: relative; }
+        .generator-image img { width: 100%; height: 100%; transition: transform 0.5s ease; }
+        .generator-card:hover .generator-image img { transform: scale(1.05); }
+        .generator-info { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
+        .generator-info h3 { font-size: 1.5rem; margin-bottom: 10px; color: var(--navy); }
+        .generator-info p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; flex-grow: 1; }
+
+        /* Services Section */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: var(--white); padding: 40px 30px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: var(--transition); border-left: 3px solid transparent; display: flex; flex-direction: column; }
+        .service-card:hover { border-left-color: var(--gold); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .service-icon { width: 60px; height: 60px; background-color: rgba(23, 105, 170, 0.1); color: var(--blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .service-card h3 { margin-bottom: 15px; font-size: 1.3rem; color: var(--navy); }
+        .service-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; flex-grow: 1; }
+
+        /* Solar Section */
+        .solar-section { background: linear-gradient(rgba(16, 31, 53, 0.9), rgba(16, 31, 53, 0.95)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=80') center/cover fixed; color: var(--white); }
+        .solar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .solar-content h2 { font-size: 2.8rem; margin-bottom: 20px; color: var(--white); }
+        .solar-content p { color: #cccccc; margin-bottom: 30px; font-size: 1.1rem; }
+        .solar-images { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .solar-images img { width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+        /* Why Choose Us */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { text-align: center; padding: 40px 20px; border: 1px solid #eee; border-radius: 8px; transition: var(--transition); background: var(--white); }
+        .feature-card:hover { border-color: var(--gold); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
+        .feature-icon { width: 70px; height: 70px; background-color: var(--navy); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+        .feature-card h3 { margin-bottom: 15px; font-size: 1.2rem; color: var(--navy); }
+        .feature-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Process Section */
+        .process-section { background-color: var(--light-gray); }
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
+        .step-number { width: 60px; height: 60px; background-color: var(--navy); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 700; margin: 0 auto 20px; font-family: var(--font-heading); border: 3px solid var(--gold); }
+        .step-card h3 { margin-bottom: 15px; color: var(--navy); }
+        .step-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Gallery Section */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .gallery-item { border-radius: 8px; overflow: hidden; height: 250px; cursor: pointer; position: relative; }
+        .gallery-item img { width: 100%; height: 100%; transition: transform 0.4s ease; }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(16, 31, 53, 0.95); z-index: 3000; display: none; align-items: center; justify-content: center; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; border: 3px solid var(--gold); }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; color: var(--white); cursor: pointer; background: none; border: none; font-size: 2.5rem; }
+
+        /* Contact Section */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-info-item { display: flex; gap: 20px; margin-bottom: 30px; }
+        .contact-info-icon { width: 50px; height: 50px; background-color: rgba(23, 105, 170, 0.1); color: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-info-text h4 { margin-bottom: 5px; color: var(--navy); font-size: 1.1rem; }
+        .contact-info-text p { color: var(--text-muted); }
+        .contact-buttons { display: flex; flex-direction: column; gap: 15px; }
+        .map-container { margin-top: 40px; border-radius: 8px; overflow: hidden; height: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+
+        /* Footer */
+        footer { background-color: var(--navy); color: var(--white); padding: 60px 0 20px; border-top: 4px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--gold); margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; }
+        .footer-col p { color: #cccccc; font-size: 0.9rem; margin-bottom: 15px; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a { color: #cccccc; font-size: 0.9rem; transition: var(--transition); }
+        .footer-col ul li a:hover { color: var(--gold); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; color: #888; font-size: 0.9rem; display: flex; justify-content: space-between; align-items: center; }
+        .back-to-top { background: var(--gold); color: var(--navy); width: 40px; height: 40px; border-radius: 4px; display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; transition: var(--transition); }
+        .back-to-top:hover { background: var(--gold-hover); }
+
+        /* Floating WhatsApp */
+        .floating-whatsapp { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 999; transition: var(--transition); }
+        .floating-whatsapp:hover { transform: scale(1.1); }
+
+        /* Modal */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(16, 31, 53, 0.85); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: var(--transition); padding: 20px; }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-content { background-color: var(--white); width: 100%; max-width: 650px; border-radius: 8px; padding: 40px; position: relative; max-height: 90vh; overflow-y: auto; transform: translateY(20px); transition: var(--transition); border-top: 5px solid var(--gold); }
+        .modal-overlay.active .modal-content { transform: translateY(0); }
+        .modal-close { position: absolute; top: 20px; right: 20px; background: none; border: none; cursor: pointer; color: var(--text-muted); transition: var(--transition); }
+        .modal-close:hover { color: var(--navy); }
+        .modal-content h3 { font-size: 1.8rem; margin-bottom: 10px; color: var(--navy); }
+        .modal-content > p { color: var(--text-muted); margin-bottom: 25px; font-size: 0.95rem; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: var(--navy); }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-main); font-size: 1rem; transition: var(--transition); }
+        .form-control:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 2px rgba(23, 105, 170, 0.2); }
+        textarea.form-control { resize: vertical; min-height: 100px; }
+        .checkbox-group { display: flex; align-items: flex-start; gap: 10px; }
+        .checkbox-group input { margin-top: 5px; }
+        .checkbox-group label { font-weight: 400; font-size: 0.85rem; color: var(--text-muted); }
+        .error-message { color: #d9534f; font-size: 0.8rem; margin-top: 5px; display: none; }
+        .form-group.error .form-control { border-color: #d9534f; }
+        .form-group.error .error-message { display: block; }
+        .success-message { display: none; background-color: #d4edda; color: #155724; padding: 15px; border-radius: 4px; margin-bottom: 20px; font-size: 0.9rem; }
+        .fallback-message { display: none; margin-top: 20px; padding: 15px; background-color: var(--light-gray); border-radius: 4px; }
+        .fallback-message textarea { width: 100%; height: 150px; margin-bottom: 10px; padding: 10px; font-family: var(--font-main); border: 1px solid #ddd; border-radius: 4px; }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content h1 { font-size: 3.2rem; }
+            .about-grid, .contact-grid, .solar-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .about-image img { height: 350px; }
+            .solar-images { margin-top: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { position: fixed; top: 0; right: -100%; width: 75%; height: 100vh; background-color: var(--navy); flex-direction: column; justify-content: center; transition: var(--transition); box-shadow: -5px 0 15px rgba(0,0,0,0.3); }
+            .nav-links.active { right: 0; }
+            .hamburger { display: block; z-index: 1001; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-buttons { flex-direction: column; }
+            .modal-content { padding: 25px; }
+            .footer-bottom { flex-direction: column; gap: 15px; }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+            .hero-content h1 { font-size: 2rem; }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * { animation: none !important; transition: none !important; }
+            .reveal { opacity: 1; transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="settings"></i>
+                OKTECH
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#generators">Generators</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#solar">Solar Solutions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn btn-gold open-modal" data-inquiry="Industrial Generator Purchase">Request a Quote</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Industrial Generator Solutions You Can Depend On</h1>
+                <p>Specialists in industrial generator sets, including Perkins and Cummins, with services covering generator sales, repairs, maintenance, installation, and solar energy solutions.</p>
+                <div class="hero-subtext">
+                    <span>Industrial Generators</span>
+                    <span>•</span>
+                    <span>Repairs & Servicing</span>
+                    <span>•</span>
+                    <span>Installation</span>
+                    <span>•</span>
+                    <span>Solar Energy</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-gold open-modal" data-inquiry="Industrial Generator Purchase">Request a Quote</button>
+                    <a href="#services" class="btn btn-outline">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Industrial engineering technician working on equipment" loading="lazy">
+            </div>
+            <div class="about-content reveal">
+                <h2>About OKTECH SERVICES ENGINEERING</h2>
+                <p>OKTECH SERVICES ENGINEERING specializes in industrial generator sets and related power engineering services. We assist customers with generator equipment inquiries, sales, repairs, servicing, maintenance, and installation.</p>
+                <p>Our services also extend to solar energy installation, inverter solutions, and other power-related requirements.</p>
+                <p>Based in Shomolu, Lagos State, we aim to help individuals and businesses explore suitable generator and power solutions for their needs.</p>
+                <p>Whether you require an industrial generator, generator servicing, repairs, installation, or solar energy support, contact our team to discuss your requirements.</p>
+                <button class="btn btn-blue open-modal" style="margin-top: 20px;" data-inquiry="Other">Talk to Our Team</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Generators Section -->
+    <section id="generators" class="section-padding generators-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Industrial Generator Sets</h2>
+                <p>Explore industrial generator options for commercial facilities, businesses, industrial operations, and other demanding power requirements.</p>
+            </div>
+            <div class="generator-grid">
+                <!-- Perkins -->
+                <div class="generator-card reveal">
+                    <div class="generator-image">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Perkins Industrial Generator Set" loading="lazy">
+                    </div>
+                    <div class="generator-info">
+                        <h3>Perkins Generator Sets</h3>
+                        <p>Inquire about suitable Perkins industrial generator models, capacity, specifications, pricing, and availability.</p>
+                        <button class="btn btn-gold open-modal" data-inquiry="Perkins Generator Inquiry">Enquire About This Generator</button>
+                    </div>
+                </div>
+                <!-- Cummins -->
+                <div class="generator-card reveal">
+                    <div class="generator-image">
+                        <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=600&q=80" alt="Cummins Industrial Generator Set" loading="lazy">
+                    </div>
+                    <div class="generator-info">
+                        <h3>Cummins Generator Sets</h3>
+                        <p>Inquire about available Cummins industrial generator equipment, power ratings, specifications, and quotations.</p>
+                        <button class="btn btn-gold open-modal" data-inquiry="Cummins Generator Inquiry">Enquire About This Generator</button>
+                    </div>
+                </div>
+                <!-- Other Industrial -->
+                <div class="generator-card reveal">
+                    <div class="generator-image">
+                        <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=600&q=80" alt="Other Industrial Diesel Generator Equipment" loading="lazy">
+                    </div>
+                    <div class="generator-info">
+                        <h3>Other Industrial Generator Sets</h3>
+                        <p>Show additional industrial diesel generator equipment and generator solutions for various applications.</p>
+                        <button class="btn btn-gold open-modal" data-inquiry="Other Generator Equipment">Enquire About This Generator</button>
+                    </div>
+                </div>
+                <!-- Standby -->
+                <div class="generator-card reveal">
+                    <div class="generator-image">
+                        <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=600&q=80" alt="Standby and Backup Power Generator" loading="lazy">
+                    </div>
+                    <div class="generator-info">
+                        <h3>Standby & Backup Power</h3>
+                        <p>Generator equipment for backup and standby applications. Contact us to discuss your specific power requirements.</p>
+                        <button class="btn btn-gold open-modal" data-inquiry="Industrial Generator Purchase">Enquire About This Generator</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Engineering Services</h2>
+                <p>Comprehensive power engineering services tailored to your requirements.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="shopping-cart"></i></div>
+                    <h3>Generator Sales & Supply</h3>
+                    <p>Help customers inquire about industrial generator sets and other generator equipment.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Industrial Generator Purchase">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="wrench"></i></div>
+                    <h3>Generator Repairs</h3>
+                    <p>Provide repair and troubleshooting services for generator equipment.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Generator Repair">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="settings"></i></div>
+                    <h3>Servicing & Maintenance</h3>
+                    <p>Promote routine generator maintenance, servicing, and equipment inspection.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Generator Servicing">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="hard-hat"></i></div>
+                    <h3>Generator Installation</h3>
+                    <p>Provide installation services based on the equipment and customer's requirements.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Generator Installation">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="activity"></i></div>
+                    <h3>Industrial Generator Support</h3>
+                    <p>Showcase engineering services relating to industrial generator sets, including Perkins and Cummins.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Other">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="refresh-cw"></i></div>
+                    <h3>Generator Purchasing</h3>
+                    <p>Allow customers to contact the company about selling or trading generator equipment.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Selling a Generator">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="sun"></i></div>
+                    <h3>Solar Energy Installation</h3>
+                    <p>Promote solar system installation and solar equipment solutions for appropriate requirements.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Solar Energy Installation">Request This Service</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i data-lucide="battery-charging"></i></div>
+                    <h3>Inverter Solutions</h3>
+                    <p>Provide information about inverter systems and related installation, servicing, and support.</p>
+                    <button class="btn btn-blue open-modal" data-inquiry="Inverter Solutions">Request This Service</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar Energy Section -->
+    <section id="solar" class="section-padding solar-section">
+        <div class="container solar-grid">
+            <div class="solar-content reveal">
+                <h2>Solar Energy and Inverter Solutions</h2>
+                <p>Explore solar energy solutions designed around your power needs. Contact OKTECH SERVICES ENGINEERING to discuss solar installation, inverter systems, batteries, and suitable equipment options.</p>
+                <button class="btn btn-gold open-modal" data-inquiry="Solar Energy Installation">Request a Solar Consultation</button>
+            </div>
+            <div class="solar-images reveal">
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=400&q=80" alt="Solar panel installation" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=400&q=80" alt="Solar inverter and battery system" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=400&q=80" alt="Industrial solar energy setup" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=400&q=80" alt="Renewable energy solar panels" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why Choose OKTECH SERVICES ENGINEERING?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="factory"></i></div>
+                    <h3>Industrial Generator Specialization</h3>
+                    <p>Focus on industrial generator sets and related engineering requirements.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="award"></i></div>
+                    <h3>Recognized Generator Brands</h3>
+                    <p>Customers can inquire about Perkins, Cummins, and other industrial generator equipment.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="tool"></i></div>
+                    <h3>Generator Repairs and Maintenance</h3>
+                    <p>Support customers with servicing and repair inquiries.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="package"></i></div>
+                    <h3>Sales and Installation Services</h3>
+                    <p>Discuss generator purchases, installations, and equipment requirements.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="zap"></i></div>
+                    <h3>Solar and Inverter Solutions</h3>
+                    <p>Explore additional options for power generation and backup.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i data-lucide="phone-call"></i></div>
+                    <h3>Direct Customer Communication</h3>
+                    <p>Contact the company by phone or WhatsApp to discuss requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-padding process-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>How Our Process Works</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card reveal">
+                    <div class="step-number">1</div>
+                    <h3>Describe Your Requirements</h3>
+                    <p>Tell us about your generator, required capacity, fault, servicing needs, or solar installation project.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">2</div>
+                    <h3>Request Information or a Quote</h3>
+                    <p>Submit your inquiry with the equipment details and location.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">3</div>
+                    <h3>Discuss the Next Steps</h3>
+                    <p>Continue the conversation with our team to confirm availability, pricing, service requirements, and appointment arrangements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Project and Equipment Gallery</h2>
+                <p>A showcase of industrial generators, engineering work, and solar solutions.</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80" alt="Industrial Generator Set" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Engineering Technician" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Perkins Generator Equipment" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=600&q=80" alt="Cummins Generator Set" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80" alt="Solar Panel Installation" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=600&q=80" alt="Solar Inverter System" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged gallery image">
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding" style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Contact OKTECH SERVICES ENGINEERING</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="reveal">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i data-lucide="building-2"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Business Name</h4>
+                            <p>OKTECH SERVICES ENGINEERING</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i data-lucide="map-pin"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Address</h4>
+                            <p>Shobande Street, Shomolu, Lagos State, Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Phone / WhatsApp</h4>
+                            <p>08029216051</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal contact-buttons">
+                    <a href="tel:08029216051" class="btn btn-blue">
+                        <i data-lucide="phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/2348029216051?text=Hello%20OKTECH%20SERVICES%20ENGINEERING,%20I%20would%20like%20to%20make%20an%20inquiry." target="_blank" class="btn btn-whatsapp">
+                        <i data-lucide="message-circle"></i> Chat on WhatsApp
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Shobande+Street,+Shomolu,+Lagos+State,+Nigeria" target="_blank" class="btn btn-outline" style="border-color: var(--navy); color: var(--navy);">
+                        <i data-lucide="map"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+            <!-- Map Embed -->
+            <div class="map-container reveal">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952838356692!2d3.380149014770386!3d6.538021295294928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d3c2d6a8b7b%3A0x7b8b8b8b8b8b8b8b!2sShomolu%2C%20Lagos!5e0!3m2!1sen!2sng!4v1689000000000!5m2!1sen!2sng" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    title="OKTECH Services Engineering Location Map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 20px;">
+                        <i data-lucide="settings"></i> OKTECH
+                    </a>
+                    <p>Specialists in industrial generator sets, generator sales, repairs, servicing, installation, and solar energy solutions based in Shomolu, Lagos.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#generators">Industrial Generators</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#solar">Solar Solutions</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Generators</h4>
+                    <ul>
+                        <li><a href="#generators">Perkins Generators</a></li>
+                        <li><a href="#generators">Cummins Generators</a></li>
+                        <li><a href="#generators">Other Equipment</a></li>
+                        <li><a href="#generators">Standby Power</a></li>
+                        <li><a href="#services">Generator Repairs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Shobande Street, Shomolu, Lagos State.</p>
+                    <p>08029216051</p>
+                    <a href="https://wa.me/2348029216051" target="_blank" class="btn btn-whatsapp" style="margin-top: 10px; padding: 10px 20px; font-size: 0.9rem;">
+                        <i data-lucide="message-circle"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> OKTECH SERVICES ENGINEERING. All rights reserved.</p>
+                <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348029216051?text=Hello%20OKTECH%20SERVICES%20ENGINEERING,%20I%20am%20interested%20in%20your%20services." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Modal Form -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <h3>Request a Quote / Service</h3>
+            <p>Fill out the form below and we will open a WhatsApp chat with your details so you can send it directly to our team.</p>
+            
+            <div class="success-message" id="success-message">
+                WhatsApp is opening in a new tab. Please press <strong>Send</strong> in WhatsApp to deliver your inquiry. If it didn't open, use the fallback options below.
+            </div>
+
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" class="form-control" required>
+                    <div class="error-message">Please enter your full name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp Number *</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                    <div class="error-message">Please enter your phone number.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address (Optional)</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-type">Inquiry Type *</label>
+                    <select id="inquiry-type" class="form-control" required>
+                        <option value="">Select an inquiry type</option>
+                        <option value="Industrial Generator Purchase">Industrial Generator Purchase</option>
+                        <option value="Perkins Generator Inquiry">Perkins Generator Inquiry</option>
+                        <option value="Cummins Generator Inquiry">Cummins Generator Inquiry</option>
+                        <option value="Other Generator Equipment">Other Generator Equipment</option>
+                        <option value="Generator Repair">Generator Repair</option>
+                        <option value="Generator Servicing">Generator Servicing</option>
+                        <option value="Generator Installation">Generator Installation</option>
+                        <option value="Solar Energy Installation">Solar Energy Installation</option>
+                        <option value="Inverter Solutions">Inverter Solutions</option>
+                        <option value="Selling a Generator">Selling a Generator</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error-message">Please select an inquiry type.</div>
+                </div>
+                <div class="form-group">
+                    <label for="gen-brand">Generator Brand (Optional)</label>
+                    <input type="text" id="gen-brand" class="form-control" placeholder="e.g., Perkins, Cummins">
+                </div>
+                <div class="form-group">
+                    <label for="gen-model">Generator Model (Optional)</label>
+                    <input type="text" id="gen-model" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="capacity">Required Capacity or Power Rating (Optional)</label>
+                    <input type="text" id="capacity" class="form-control" placeholder="e.g., 100kVA, 500kVA">
+                </div>
+                <div class="form-group">
+                    <label for="customer-type">Customer Type (Optional)</label>
+                    <select id="customer-type" class="form-control">
+                        <option value="">Select customer type</option>
+                        <option value="Individual">Individual</option>
+                        <option value="Business">Business</option>
+                        <option value="Industrial Facility">Industrial Facility</option>
+                        <option value="Contractor">Contractor</option>
+                        <option value="Reseller">Reseller</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location *</label>
+                    <input type="text" id="location" class="form-control" placeholder="City / State" required>
+                    <div class="error-message">Please enter your location.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Appointment Date (Optional)</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Requirements *</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                    <div class="error-message">Please describe your requirements.</div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">I agree that OKTECH SERVICES ENGINEERING may use my information to respond to my inquiry. *</label>
+                </div>
+                <div class="error-message" id="consent-error" style="margin-bottom: 15px;">You must agree to the privacy terms.</div>
+                
+                <button type="submit" class="btn btn-gold" style="width: 100%;" id="submit-btn">Continue to WhatsApp</button>
+            </form>
+
+            <div class="fallback-message" id="fallback-message">
+                <p style="margin-bottom: 10px; font-weight: 600;">If WhatsApp did not open automatically, copy the message below and send it to us manually:</p>
+                <textarea id="fallback-text" readonly></textarea>
+                <button class="btn btn-gold" id="copy-btn" style="width: 100%; margin-bottom: 10px;">Copy Message</button>
+                <button class="btn btn-outline" id="retry-btn" style="width: 100%; border-color: var(--blue); color: var(--blue);">Try WhatsApp Again</button>
+            </div>
+            
+            <p style="font-size: 0.8rem; color: #888; margin-top: 15px; text-align: center;">Your information is only used to respond to this inquiry. We do not store your data on this website.</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Sticky Navbar & Back to Top
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            if (window.scrollY > 500) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Back to top
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Intersection Observer for Animations
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Lightbox Logic
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('contact-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const openModalBtns = document.querySelectorAll('.open-modal');
+        const form = document.getElementById('inquiry-form');
+        const successMessage = document.getElementById('success-message');
+        const fallbackMessage = document.getElementById('fallback-message');
+        const fallbackText = document.getElementById('fallback-text');
+        const submitBtn = document.getElementById('submit-btn');
+        const inquirySelect = document.getElementById('inquiry-type');
+
+        // Open Modal & Pre-select Inquiry Type
+        openModalBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const inquiryType = btn.getAttribute('data-inquiry');
+                if (inquiryType) {
+                    inquirySelect.value = inquiryType;
+                }
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close Modal
+        const closeModal = () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                fallbackMessage.style.display = 'none';
+                form.style.display = 'block';
+            }, 300);
+        };
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+        });
+
+        // Form Submission
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            const requiredFields = ['name', 'phone', 'inquiry-type', 'location', 'message'];
+            
+            requiredFields.forEach(fieldId => {
+                const input = document.getElementById(fieldId);
+                const group = input.closest('.form-group');
+                if (!input.value.trim()) {
+                    group.classList.add('error');
+                    isValid = false;
+                } else {
+                    group.classList.remove('error');
+                }
+            });
+
+            const consent = document.getElementById('consent');
+            const consentError = document.getElementById('consent-error');
+            if (!consent.checked) {
+                consentError.style.display = 'block';
+                isValid = false;
+            } else {
+                consentError.style.display = 'none';
+            }
+
+            if (!isValid) return;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Processing...';
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const inquiryType = document.getElementById('inquiry-type').value;
+            const genBrand = document.getElementById('gen-brand').value.trim();
+            const genModel = document.getElementById('gen-model').value.trim();
+            const capacity = document.getElementById('capacity').value.trim();
+            const customerType = document.getElementById('customer-type').value;
+            const location = document.getElementById('location').value.trim();
+            const date = document.getElementById('date').value;
+            const message = document.getElementById('message').value.trim();
+
+            let waMessage = `Hello OKTECH SERVICES ENGINEERING,\n\nI would like to make an inquiry.\n\n`;
+            waMessage += `Full Name: ${name}\n`;
+            waMessage += `Phone: ${phone}\n`;
+            if (email) waMessage += `Email: ${email}\n`;
+            waMessage += `Inquiry Type: ${inquiryType}\n`;
+            if (genBrand) waMessage += `Generator Brand: ${genBrand}\n`;
+            if (genModel) waMessage += `Generator Model: ${genModel}\n`;
+            if (capacity) waMessage += `Power Rating: ${capacity}\n`;
+            if (customerType) waMessage += `Customer Type: ${customerType}\n`;
+            waMessage += `Location: ${location}\n`;
+            if (date) waMessage += `Preferred Date: ${date}\n\n`;
+            waMessage += `Requirements:\n${message}\n\n`;
+            waMessage += `Please provide information about the available options, pricing, and next steps.\n\nThank you.`;
+
+            const encodedMessage = encodeURIComponent(waMessage);
+            const waUrl = `https://wa.me/2348029216051?text=${encodedMessage}`;
+
+            const newWindow = window.open(waUrl, '_blank');
+
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+                showFallback(waMessage);
+            } else {
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+                showFallback(waMessage);
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Continue to WhatsApp';
+        });
+
+        function showFallback(message) {
+            fallbackMessage.style.display = 'block';
+            fallbackText.value = message;
+            
+            document.getElementById('copy-btn').onclick = () => {
+                fallbackText.select();
+                document.execCommand('copy');
+                const copyBtn = document.getElementById('copy-btn');
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = 'Copied!';
+                setTimeout(() => copyBtn.innerHTML = originalText, 2000);
+            };
+
+            document.getElementById('retry-btn').onclick = () => {
+                const encoded = encodeURIComponent(message);
+                window.open(`https://wa.me/2348029216051?text=${encoded}`, '_blank');
+            };
+        }
+
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('input', () => {
+                input.closest('.form-group').classList.remove('error');
+            });
+        });
+        document.getElementById('consent').addEventListener('change', () => {
+            document.getElementById('consent-error').style.display = 'none';
+        });
+
+    </script>
+</body>
+</html>
